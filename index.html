@@ -16,7 +16,9 @@
 
   <nav>
     <div class="logo">
-      <img src="/assets/logo.svg" alt="Arch logo">
+      <a href="/index.html">
+        <img src="/assets/logo.svg" alt="Arch logo">
+      </a>
     </div>
     <div class="nav-links">
       <a href="/portfolio.html" class="nav-link">Portfolio</a>
@@ -90,50 +92,43 @@
       </div>
     </div>
     <div class="featured-projects">
-      <div class="featured-project project-1">
+      <div class="project project-1">
         <div class="number">1</div>
-        <div class="project-name">
+        <div class="project-info project-info-home">
           <p>Project Del Sol</p>
-          <a href="/portfolio.html">View All Projects</a>
+          <a class="light-text" href="/portfolio.html">View All Projects</a>
         </div>
-        <div class="featured-project-overlay"></div>
+        <div class="project-overlay"></div>
       </div>
-      <div class="featured-project project-2">
+      <div class="project project-2">
         <div class="number">2</div>
-        <div class="project-name">
+        <div class="project-info project-info-home">
           <p>228B Tower</p>
-          <a href="/portfolio.html">View All Projects</a>
+          <a class="light-text" href="/portfolio.html">View All Projects</a>
         </div>
-        <div class="featured-project-overlay"></div>
+        <div class="project-overlay"></div>
       </div>
-      <div class="featured-project project-3">
+      <div class="project project-3">
         <div class="number">3</div>
-        <div class="project-info">
-          <div class="project-name">
-            <p>Le Prototype</p>
-            <a href="/portfolio.html">View All Projects</a>
-          </div>
+        <div class="project-info project-info-home">
+          <p>Le Prototype</p>
+          <a class="light-text" href="/portfolio.html">View All Projects</a>
         </div>
-        <div class="featured-project-overlay"></div>
+        <div class="project-overlay"></div>
       </div>
     </div>
   </section>
 
-  <div class="footer-container">
-    <footer>
-      <div class="logo-footer">
-        <img src="/assets/logo-white.svg" alt="Arch logo">
-      </div>
-      <div class="footer-links">
-        <a href="/portfolio.html" class="nav-link">Portfolio</a>
-        <a href="/about.html" class="nav-link">About Us</a>
-        <a href="/contact.html" class="nav-link">Contact</a>
-      </div>
-    </footer>
-    <div class="btn-dark btn-footer">
-      <a href="/portfolio.html">See Our Portfolio<img src="/assets/icons/icon-arrow-white.svg" alt=""></a>
-    </div>
-  </div>
+  <div id="footer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
 </body>
 
 </html>

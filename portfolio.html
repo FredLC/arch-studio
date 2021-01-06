@@ -1,62 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Arch Studio Website Challenge</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Arch Studio | Portfolio</title>
 </head>
+
 <body>
+  <nav>
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/assets/logo.svg" alt="Arch logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/portfolio.html" class="nav-link nav-link-active">Portfolio</a>
+      <a href="/about.html" class="nav-link">About Us</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
 
-  Portfolio
+  <div class="portfolio">
 
-  Portfolio
-  About Us
-  Contact
+    <div class="project project-4">
+      <div class="project-info">
+        <p>Seraph Station</p>
+        <p class="light-text">September 2019</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Seraph Station
-  September 2019
+    <div class="project project-5">
+      <div class="project-info">
+        <p>Eebox Building</p>
+        <p class="light-text">August 2017</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Eebox Building
-  August 2017
+    <div class="project project-6">
+      <div class="project-info">
+        <p>Federal II Tower</p>
+        <p class="light-text">March 2017</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Federal II Tower
-  March 2017
+    <div class="project project-1">
+      <div class="project-info">
+        <p>Project Del Sol</p>
+        <p class="light-text">January 2016</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Project Del Sol
-  January 2016
+    <div class="project project-3">
+      <div class="project-info">
+        <p>Le Prototype</p>
+        <p class="light-text">October 2015</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Le Prototype
-  October 2015
+    <div class="project project-2">
+      <div class="project-info">
+        <p>228B Tower</p>
+        <p class="light-text">April 2015</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  228B Tower
-  April 2015
+    <div class="project project-7">
+      <div class="project-info">
+        <p>Grand Edelweiss Hotel</p>
+        <p class="light-text">December 2013</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Grand Edelweiss Hotel
-  December 2013
+    <div class="project project-8">
+      <div class="project-info">
+        <p>Netcry Tower</p>
+        <p class="light-text">August 2012</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Netcry Tower
-  August 2012
+    <div class="project project-9">
+      <div class="project-info">
+        <p>Hypers</p>
+        <p class="light-text">January 2012</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Hypers
-  January 2012
+    <div class="project project-10">
+      <div class="project-info">
+        <p>SXIV Tower</p>
+        <p class="light-text">March 2011</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  SXIV Tower
-  March 2011
+    <div class="project project-11">
+      <div class="project-info">
+        <p>Trinity Bank Tower</p>
+        <p class="light-text">September 2010</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Trinity Bank Tower
-  September 2010
+    <div class="project project-12">
+      <div class="project-info">
+        <p>Project Paramour</p>
+        <p class="light-text">February 2008</p>
+      </div>
+      <div class="project-overlay"></div>
+    </div>
 
-  Project Paramour
-  February 2008
+  </div>
 
-  Portfolio
-  About Us
-  Contact
+  <div id="footer"></div>
 
-  See Our Portfolio
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("#navigation").load("navigation.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
 </body>
+
 </html>
