@@ -71,7 +71,6 @@ nav {
 
 .hero {
   position: relative;
-  background-image: url("/assets/home/desktop/image-hero-paramour.jpg");
   height: 720px;
 }
 
@@ -84,26 +83,31 @@ nav {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-.hero-text {
+.slide {
   position: relative;
+  display: none;
+}
+
+.hero-text {
+  position: absolute;
   color: white;
   z-index: 1;
-  padding: 200px;
+  top: 175px;
+  left: 175px;
   padding-bottom: 0px;
-  width: 400px;
+  width: 500px;
 }
 
 .hero-title {
   font-size: 80px;
   letter-spacing: -2px;
   line-height: 100%;
-  width: 160px;
+  padding-bottom: 14px;
 }
 
 .hero-subtitle {
   font-size: 15px;
   line-height: 25px;
-  width: 400px;
   margin-bottom: 40px;
 }
 
@@ -125,17 +129,17 @@ nav {
 }
 
 .btn-hero {
-  min-width: 250px;
+  max-width: 250px;
 }
 
-.slider {
+.slider-buttons {
   display: flex;
   position: absolute;
   bottom: 0;
   margin-left: -80px;
 }
 
-.slide {
+.slide-button {
   position: relative;
   height: 80px;
   width: 80px;
@@ -147,9 +151,10 @@ nav {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
-.slide:hover {
+.slide-button:hover {
   background-color: var(--very-light-grey);
 }
 
@@ -160,6 +165,32 @@ nav {
 
 .active:hover {
   color: var(--medium-grey);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1.6s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .welcome {

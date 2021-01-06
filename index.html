@@ -30,19 +30,66 @@
   </nav>
 
   <section class="hero">
-    <div class="hero-text">
-      <h1 class="hero-title">Project Paramour</h1>
-      <p class="hero-subtitle">Project made for an art museum near Southwest London. Project Paramour is a statement of
-        bold, modern architecture.</p>
-      <div class="btn-dark btn-hero">
-        <a href="/portfolio.html">See Our Portfolio <img src="/assets/icons/icon-arrow-white.svg" alt=""></a>
+    <div class="slideshow-container">
+      <div class="slide">
+        <img class="fade" src="/assets/home/desktop/image-hero-paramour.jpg" style="width:100%">
+        <div class="hero-text">
+          <h1 class="hero-title">Project Paramour</h1>
+          <p class="hero-subtitle">Project made for an art museum near Southwest London. Project Paramour is a statement
+            of
+            bold, modern architecture.</p>
+          <div class="btn-dark btn-hero">
+            <a href="/portfolio.html">See Our Portfolio <img src="/assets/icons/icon-arrow-white.svg" alt=""></a>
+          </div>
+        </div>
       </div>
+
+      <div class="slide">
+        <img class="fade" src="/assets/home/desktop/image-hero-seraph.jpg" style="width:100%">
+        <div class="hero-text">
+          <h1 class="hero-title">Seraph Station</h1>
+          <p class="hero-subtitle">The Seraph Station project challenged us to design a unique station that would
+            transport people through time. The result
+            is a fresh and futuristic model inspired by space stations.</p>
+          <div class="btn-dark btn-hero">
+            <a href="/portfolio.html">See Our Portfolio <img src="/assets/icons/icon-arrow-white.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img class="fade" src="/assets/home/desktop/image-hero-federal.jpg" style="width:100%">
+        <div class="hero-text">
+          <h1 class="hero-title">Federal II Tower</h1>
+          <p class="hero-subtitle">A sequel theme project for a tower originally built in the 1800s. We achieved this
+            with a striking look of brutal
+            minimalism with modern touches.</p>
+          <div class="btn-dark btn-hero">
+            <a href="/portfolio.html">See Our Portfolio <img src="/assets/icons/icon-arrow-white.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img class="fade" src="/assets/home/desktop/image-hero-federal.jpg" style="width:100%">
+        <div class="hero-text">
+          <h1 class="hero-title">Trinity Bank Tower</h1>
+          <p class="hero-subtitle">Trinity Bank challenged us to make a concept for a 84 story building located in the
+            middle of a city with a high
+            earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.
+          </p>
+          <div class="btn-dark btn-hero">
+            <a href="/portfolio.html">See Our Portfolio <img src="/assets/icons/icon-arrow-white.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="slider">
-      <div class="slide active">01</div>
-      <div class="slide">02</div>
-      <div class="slide">03</div>
-      <div class="slide">04</div>
+    <div class="slider-buttons">
+      <div class="slide-button" onclick="currentSlide(1)">01</div>
+      <div class="slide-button" onclick="currentSlide(2)">02</div>
+      <div class="slide-button" onclick="currentSlide(3)">03</div>
+      <div class="slide-button" onclick="currentSlide(4)">04</div>
     </div>
     <div class="hero-overlay"></div>
   </section>
@@ -126,6 +173,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   <script>
     $(function () {
       $("#footer").load("footer.html");
